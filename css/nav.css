@@ -4,21 +4,43 @@
   box-sizing: border-box;
 }
 
+h1{
+  font-size: 50px;
+}
+p{
+  font-size: 20px;
+}
+body {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+
 .navbar {
   background-color: #222324;
   padding: 25px 0;
 }
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;         /* Makes the list items in one row */
-  justify-content: flex-end; /* Center the items horizontally */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.navbar li {
-  margin: 0 30px 0 0;        /* Space between links */
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 .navbar a {
@@ -26,10 +48,197 @@
   text-decoration: none;
   font-weight: bold;
   font-family: sans-serif;
-  transition: color 0.3s ease;
   font-size: 20px;
-}
+  transition: color 0.6s ease; /* You already have this */
+} 
+
 
 .navbar a:hover {
   color: #ffcc00;
+
 }
+
+.intro-section {
+  padding: 60px 0;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.intro-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.intro-text p {
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.intro-image .pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
+}
+
+.skills {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.skill {
+  text-align: center;
+  width: 150px;
+}
+
+.skill i {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.about-section {
+  background-color: #f9f9f9; /* Soft background */
+  padding: 60px 0;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.skill-card {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 220px;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card i {
+  font-size: 3rem;
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+
+.traits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.trait-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trait-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.trait-icon {
+  background-color: #ffcc00;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trait-icon i {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.trait-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.trait-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
