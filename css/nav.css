@@ -381,5 +381,123 @@ body {
   color: #333;
 }
 
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Tablets (max width: 991px) */
+@media (max-width: 991px) {
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .intro-text h1 {
+    font-size: 36px;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+  }
+
+  .intro-image .pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+  }
+
+  .projects-container h2,
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Phones (max width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .intro-container {
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skill-card,
+  .trait-card {
+    width: 100%;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+
+  .tech-item {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form .btn {
+    font-size: 0.95rem;
+  }
+
+  .social-links a {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* Extra Small Devices (max width: 480px) */
+@media (max-width: 480px) {
+  .intro-text h1 {
+    font-size: 28px;
+  }
+
+  .intro-image .pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .project-placeholder p,
+  .contact-intro {
+    font-size: 1rem;
+  }
+
+  .projects-container h2,
+  .contact-container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
 
 
